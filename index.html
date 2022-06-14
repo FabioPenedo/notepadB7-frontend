@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>teste</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div id="new_note">
+                <img src="images/new_note.png" width="35px" height="35px" alt="">
+                <h1>Nova Nota</h1>
+            </div>
+            <div class="folders_copy">
+                <div class="foldername">
+                    <h1></h1>
+                    <div class="content">
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="edit_delete">
+                            <img id="edit" src="images/edit.png" width="35px" height="35px" alt="">
+                            <img id="delete" src="images/delete.png" width="35px" height="35px" alt="">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="folders"></div>
+        </nav>
+        <article>
+            <div id="area">
+                <textarea id="area_top" placeholder="Título"></textarea>
+                <textarea id="area_content" placeholder="Texto"></textarea>
+                <textarea id="area_bottom" placeholder="Nome da pasta"></textarea>
+                <div id="color_save">
+                    <div id="circle">
+                        <div id="colors">
+                            <div class="circle_all" id="circle_1"></div>
+                            <div class="circle_all" id="circle_2"></div>
+                            <div class="circle_all" id="circle_3"></div>
+                            <div class="circle_all" id="circle_4"></div>
+                            <div class="circle_all" id="circle_5"></div>
+                            <div class="circle_all" id="circle_6"></div>
+                        </div>
+                    </div>
+                    <a id="update" href="">Atualizar</a>
+                    <a id="submit" href="">Criar</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

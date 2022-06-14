@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gentium Basic';
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+section nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+section nav #new_note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#new_note h1 {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.folders_copy {
+    display: none;
+}
+
+.folders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.folders .foldername {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.folders .foldername h1 {
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: all .3s linear;
+}
+
+.folders .foldername h1:hover {
+    background-color: #f0f0f05d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.folders .foldername .content ul li {
+    font-weight: 400;
+    font-size: 1.2rem;
+    overflow: hidden;
+    max-width: 20ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: rgba(220, 20, 60, 0.5);
+    min-width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.folders .foldername .content .edit_delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+article {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article #area {
+    display: flex;
+    flex-direction: column;
+}
+
+article #area #area_top {
+    display: flex;
+    height: 60px;
+    width: 751px;
+    border-radius: 20px;
+    background-color: #FFB70099;
+    margin-bottom: 40px;
+    outline: 0;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: 0;
+    resize: none;
+    padding-top: 15px;
+}
+
+article #area #area_bottom {
+    display: flex;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #FFB70099;
+    margin-bottom: 40px;
+    outline: 0;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: 0;
+    resize: none;
+    padding-top: 7px;
+}
+
+article #area #area_content {
+    height: 400px;
+    width: 750px;
+    border-radius: 20px;
+    background-color: #FFB70099;
+    margin-bottom: 30px;
+    outline: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+article #area #color_save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 751px;
+    height: 30px;
+}
+
+article #area #color_save #circle {
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #FFB70099;
+}
+
+#color_save a {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+#color_save a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#circle #colors {
+    position: absolute;
+    top: 40px;
+    height: 100px;
+    width: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dashed black;
+}
+
+#circle #colors #circle_1 {
+    height: 33px;
+    width: 33px;
+    background-color: #F7258599;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle #colors #circle_2 {
+    height: 33px;
+    width: 33px;
+    background-color: #FFB70099;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle #colors #circle_3 {
+    height: 33px;
+    width: 33px;
+    background-color: #4CC9F099;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle #colors #circle_4 {
+    height: 33px;
+    width: 33px;
+    background-color: #4361EE99;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle #colors #circle_5 {
+    height: 33px;
+    width: 33px;
+    background-color: #3A0CA399;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle #colors #circle_6 {
+    height: 33px;
+    width: 33px;
+    background-color: #4F772D99;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
