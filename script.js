@@ -86,10 +86,6 @@ async function all() {
     qSa('.edit_delete #edit').forEach(item => {
         item.addEventListener('click', noteId)
     });
-
-    qSa('.folders .foldername').forEach(item => {
-        item.addEventListener('click', hideFolderName)
-    })
 }
 
 async function remove(e) {
@@ -168,27 +164,4 @@ async function update(e) {
         await requestUpdate.json()
         document.location.reload(true);
     }
-}
-
-function hideFolderName(e) {
-    let content = qS('.folders .foldername .content')
-    if(e.target) {
-        console.log(e.target.parent().find('.content'))
-    }
-
-
-
-
-    /*if(e.target.style.display == 'block') {
-        e.target.style.opacity = 0
-        setTimeout(() => {
-            content.style.display = 'none'
-        }, 350);
-    }else {
-        e.target.style.opacity = 0
-        e.target.style.display = 'block'
-        setTimeout(() => {
-            e.target.style.opacity = 1
-        }, 200);
-    }*/
 }
